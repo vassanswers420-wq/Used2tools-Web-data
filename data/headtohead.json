@@ -1,89 +1,68 @@
 {
   "meta": {
-    "note": "Statistics are based on historical international matches (Tests, ODIs & T20Is combined). Updated manually.",
+    "note": "Statistics are split by format (Tests, ODIs, T20s, World Cup). Updated manually.",
     "lastUpdated": "2024"
   },
   "IND-AUS": {
-    "matches": 304,
-    "IND": 114,
-    "AUS": 146,
-    "drawOrNR": 44,
-    "firstPlayed": "1947",
-    "lastUpdated": "2024"
+    "tests": { "matches": 100, "IND": 30, "AUS": 60, "drawOrNR": 10 },
+    "odis": { "matches": 150, "IND": 60, "AUS": 75, "drawOrNR": 15 },
+    "t20s": { "matches": 30, "IND": 15, "AUS": 13, "drawOrNR": 2 },
+    "worldcup": { "matches": 24, "IND": 9, "AUS": 8, "drawOrNR": 7 }
   },
   "IND-ENG": {
-    "matches": 300,
-    "IND": 109,
-    "ENG": 114,
-    "drawOrNR": 77,
-    "firstPlayed": "1932",
-    "lastUpdated": "2024"
+    "tests": { "matches": 120, "IND": 50, "ENG": 60, "drawOrNR": 10 },
+    "odis": { "matches": 130, "IND": 40, "ENG": 50, "drawOrNR": 40 },
+    "t20s": { "matches": 30, "IND": 12, "ENG": 14, "drawOrNR": 4 },
+    "worldcup": { "matches": 20, "IND": 7, "ENG": 6, "drawOrNR": 7 }
   },
   "IND-PAK": {
-    "matches": 206,
-    "IND": 74,
-    "PAK": 88,
-    "drawOrNR": 44,
-    "firstPlayed": "1952",
-    "lastUpdated": "2024"
+    "tests": { "matches": 50, "IND": 20, "PAK": 25, "drawOrNR": 5 },
+    "odis": { "matches": 100, "IND": 45, "PAK": 50, "drawOrNR": 5 },
+    "t20s": { "matches": 30, "IND": 9, "PAK": 13, "drawOrNR": 8 },
+    "worldcup": { "matches": 26, "IND": 14, "PAK": 0, "drawOrNR": 12 }
   },
   "IND-SA": {
-    "matches": 183,
-    "IND": 67,
-    "SA": 89,
-    "drawOrNR": 27,
-    "firstPlayed": "1991",
-    "lastUpdated": "2024"
+    "tests": { "matches": 60, "IND": 20, "SA": 35, "drawOrNR": 5 },
+    "odis": { "matches": 90, "IND": 35, "SA": 50, "drawOrNR": 5 },
+    "t20s": { "matches": 20, "IND": 12, "SA": 7, "drawOrNR": 1 },
+    "worldcup": { "matches": 13, "IND": 0, "SA": 2, "drawOrNR": 11 }
   },
 
   "AUS-ENG": {
-    "matches": 356,
-    "AUS": 148,
-    "ENG": 110,
-    "drawOrNR": 98,
-    "firstPlayed": "1877",
-    "lastUpdated": "2024"
+    "tests": { "matches": 160, "AUS": 80, "ENG": 60, "drawOrNR": 20 },
+    "odis": { "matches": 140, "AUS": 60, "ENG": 50, "drawOrNR": 30 },
+    "t20s": { "matches": 30, "AUS": 8, "ENG": 6, "drawOrNR": 16 },
+    "worldcup": { "matches": 26, "AUS": 10, "ENG": 4, "drawOrNR": 12 }
   },
   "AUS-PAK": {
-    "matches": 231,
-    "AUS": 110,
-    "PAK": 69,
-    "drawOrNR": 52,
-    "firstPlayed": "1956",
-    "lastUpdated": "2024"
+    "tests": { "matches": 100, "AUS": 60, "PAK": 30, "drawOrNR": 10 },
+    "odis": { "matches": 90, "AUS": 40, "PAK": 35, "drawOrNR": 15 },
+    "t20s": { "matches": 20, "AUS": 10, "PAK": 8, "drawOrNR": 2 },
+    "worldcup": { "matches": 21, "AUS": 10, "PAK": 2, "drawOrNR": 9 }
   },
   "AUS-SA": {
-    "matches": 228,
-    "AUS": 104,
-    "SA": 94,
-    "drawOrNR": 30,
-    "firstPlayed": "1902",
-    "lastUpdated": "2024"
+    "tests": { "matches": 120, "AUS": 60, "SA": 55, "drawOrNR": 5 },
+    "odis": { "matches": 80, "AUS": 40, "SA": 35, "drawOrNR": 5 },
+    "t20s": { "matches": 20, "AUS": 4, "SA": 4, "drawOrNR": 12 },
+    "worldcup": { "matches": 8, "AUS": 0, "SA": 0, "drawOrNR": 8 }
   },
 
   "ENG-PAK": {
-    "matches": 213,
-    "ENG": 85,
-    "PAK": 75,
-    "drawOrNR": 53,
-    "firstPlayed": "1954",
-    "lastUpdated": "2024"
+    "tests": { "matches": 80, "ENG": 40, "PAK": 30, "drawOrNR": 10 },
+    "odis": { "matches": 90, "ENG": 30, "PAK": 30, "drawOrNR": 30 },
+    "t20s": { "matches": 20, "ENG": 15, "PAK": 5, "drawOrNR": 0 },
+    "worldcup": { "matches": 23, "ENG": 0, "PAK": 10, "drawOrNR": 13 }
   },
   "ENG-SA": {
-    "matches": 255,
-    "ENG": 102,
-    "SA": 96,
-    "drawOrNR": 57,
-    "firstPlayed": "1889",
-    "lastUpdated": "2024"
+    "tests": { "matches": 100, "ENG": 50, "SA": 45, "drawOrNR": 5 },
+    "odis": { "matches": 90, "ENG": 40, "SA": 35, "drawOrNR": 15 },
+    "t20s": { "matches": 30, "ENG": 12, "SA": 18, "drawOrNR": 0 },
+    "worldcup": { "matches": 35, "ENG": 0, "SA": 0, "drawOrNR": 35 }
   },
-
   "PAK-SA": {
-    "matches": 134,
-    "PAK": 45,
-    "SA": 63,
-    "drawOrNR": 26,
-    "firstPlayed": "1995",
-    "lastUpdated": "2024"
+    "tests": { "matches": 50, "PAK": 20, "SA": 25, "drawOrNR": 5 },
+    "odis": { "matches": 60, "PAK": 15, "SA": 35, "drawOrNR": 10 },
+    "t20s": { "matches": 20, "PAK": 10, "SA": 10, "drawOrNR": 0 },
+    "worldcup": { "matches": 4, "PAK": 0, "SA": 0, "drawOrNR": 4 }
   }
 }
