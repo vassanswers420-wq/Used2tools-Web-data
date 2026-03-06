@@ -1,0 +1,35 @@
+name: Update Prices
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+    - cron: "0 18 * * *"
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+
+      - name: Install requests
+        run: pip install requests
+
+      - name: Run script
+        env:
+          TRADEWATCH_KEY: ${{ secrets.TRADEWATCH_KEY }}
+        run: python update_prices.py
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add data/prices.json
+          git commit -m "Update prices" || echo "No changes"
+          git push
