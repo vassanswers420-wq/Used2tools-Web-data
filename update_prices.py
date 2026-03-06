@@ -13,7 +13,7 @@ crypto_url = "https://api.tradewatch.io/crypto/quotes?symbols=BTCUSD,XRPUSD"
 
 commodities_url = "https://api.tradewatch.io/commodities/quotes?symbols=COPPER,GOLD,SILVER,NICKEL,ALUMINIUM"
 
-currency_url = "https://api.tradewatch.io/quotes?symbols=AUDUSD,CNYUSD,USDINR"
+currency_url = "https://api.tradewatch.io/quotes?symbols=AUDUSD,CNHUSD,INRUSD"
 
 # -------------------
 # Main Prices Object
