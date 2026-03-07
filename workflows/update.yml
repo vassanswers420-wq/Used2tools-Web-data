@@ -1,4 +1,4 @@
-      - name: Run update script
-        env:
-          EARNINGSFEED_KEY: ${{ secrets.EARNINGSFEED_KEY }}
-        run: python update_price.py
+- name: Run update script
+  env:
+    UPDATE_INSIDER: ${{ secrets.UPDATE_INSIDER }}
+  run: python update_price.py
