@@ -1,4 +1,4 @@
 - name: Run update script
   env:
     UPDATE_INSIDER: ${{ secrets.UPDATE_INSIDER }}
-  run: python update_price.py
+  run: python update_insider.py
