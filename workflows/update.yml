@@ -1,0 +1,4 @@
+      - name: Run update script
+        env:
+          EARNINGSFEED_KEY: ${{ secrets.EARNINGSFEED_KEY }}
+        run: python update_price.py
