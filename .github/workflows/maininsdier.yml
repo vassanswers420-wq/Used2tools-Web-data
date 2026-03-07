@@ -1,22 +1,39 @@
-import os
-import requests
-import json
-from datetime import datetime
+name: Update Insider Data (5x Daily)
 
-# Use the new secret
-API_KEY = os.environ.get("UPDATE_INSIDER")
+on:
+  schedule:
+    - cron: '0 0 * * *'
+    - cron: '0 5 * * *'
+    - cron: '0 10 * * *'
+    - cron: '0 15 * * *'
+    - cron: '0 20 * * *'
+  workflow_dispatch:
 
-url = "https://earningsfeed.com/api/v1/insider/transactions"
+jobs:
+  update:
+    runs-on: ubuntu-latest
 
-headers = {
-    "Authorization": f"Bearer {API_KEY}"
-}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-response = requests.get(url, headers=headers)
-data = response.json()
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
 
-# Save inside /data folder
-with open("data/insider_transactions.json", "w") as f:
-    json.dump(data, f, indent=4)
+      - name: Install dependencies
+        run: pip install requests
 
-print("Data updated at", datetime.utcnow())
+      - name: Run update script
+        env:
+          UPDATE_INSIDER: ${{ secrets.UPDATE_INSIDER }}
+        run: python update_insider.py
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add data/
+          git commit -m "Auto update insider data"
+          git push
