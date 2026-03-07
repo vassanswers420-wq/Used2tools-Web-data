@@ -4,7 +4,7 @@ import json
 from datetime import datetime
 
 # Use the new secret
-API_KEY = os.environ.get("EARNINGSFEED_KEY")
+API_KEY = os.environ.get("UPDATE_INSIDER")
 
 url = "https://earningsfeed.com/api/v1/insider/transactions"
 
